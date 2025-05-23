@@ -1,4 +1,4 @@
-package com.mariuszilinskas.vsp.configserver;
+package com.mariuszilinskas.vsp.infra.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

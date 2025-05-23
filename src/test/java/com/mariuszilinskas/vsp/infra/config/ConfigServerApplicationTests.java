@@ -1,4 +1,4 @@
-package com.mariuszilinskas.vsp.configserver;
+package com.mariuszilinskas.vsp.infra.config;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

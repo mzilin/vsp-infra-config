@@ -68,6 +68,6 @@ management:
 logging:
   level:
     root: ERROR
-    com.proactivetechie: INFO
+    com.mariuszilinskas: INFO
     org.springframework: INFO
     org.hibernate: INFO
