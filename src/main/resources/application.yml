@@ -6,17 +6,16 @@ server:
 info:
   app:
     environment: DEFAULT
-    name: Config Server
-    description: Config Server for Video Streaming Platform
-    version: 1.0.0
+    name: ${spring.application.name}
+    description: Centralised Config Server for the Video Streaming Platform
 
 # Spring application properties
 spring:
   application:
-    name: configserver
+    name: config-server
   profiles:
     active: native
-#    active: git
+#    active: git TODO: add git
   config:
     import:
       - optional:file:./env.properties
@@ -49,25 +48,18 @@ eureka:
     preferIpAddress: true
 
 # Management properties
-endpoints:
-  shutdown:
-    enabled: true
 management:
   info:
     env:
       enabled: true
-  endpoint:
-    shutdown:
-      enabled: true
   endpoints:
     web:
       exposure:
-        include: info, health, refresh, shutdown
+        include: info, health, refresh
 
 # Logging properties
 logging:
   level:
     root: ERROR
-    com.mariuszilinskas: INFO
     org.springframework: INFO
-    org.hibernate: INFO
+    com.mariuszilinskas: INFO
