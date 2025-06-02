@@ -1,0 +1,17 @@
+# Spring application properties for CI
+spring:
+  profiles:
+    active: native
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:/config
+
+# Eureka configuration for CI
+eureka:
+  client:
+    fetchRegistry: false
+    registerWithEureka: false

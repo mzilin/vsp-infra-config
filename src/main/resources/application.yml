@@ -14,22 +14,19 @@ spring:
   application:
     name: config-server
   profiles:
-    active: native
-#    active: git TODO: add git
+    active: git
   config:
     import:
       - optional:file:./env.properties
   cloud:
     config:
       server:
-        native:
-          searchLocations: classpath:/config
-#        git:
-#          username: ${GITHUB_USERNAME}
-#          password: ${GITHUB_PASSWORD}
-#          uri: ${GITHUB_REPO_URI}
-#          clone-on-start: true
-#          default-label: main   # branch name
+        git:
+          username: ${GITHUB_USERNAME}
+          password: ${GITHUB_PASSWORD}
+          uri: ${GITHUB_REPO_URI}
+          clone-on-start: true
+          default-label: main   # branch name
       failFast: true
       retry:
         initialInterval: 3000
