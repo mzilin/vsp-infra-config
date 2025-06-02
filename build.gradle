@@ -47,11 +47,3 @@ compileJava {
 compileTestJava {
 	options.compilerArgs << "-Xlint:deprecation"
 }
-
-test {
-	useJUnitPlatform()
-	testLogging {
-		events "passed", "skipped", "failed"
-	}
-	finalizedBy jacocoTestReport
-}
