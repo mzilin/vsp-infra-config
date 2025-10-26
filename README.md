@@ -1,12 +1,12 @@
-# Video Streaming Platform – Config Server
+# Streamix – Config Server
 
-![Build](https://img.shields.io/github/actions/workflow/status/mzilin/vsp-infra-config/build.yml?label=Build&logo=github&logoColor=white&style=flat)
+![Build](https://img.shields.io/github/actions/workflow/status/mzilin/streamix-infra-config/build.yml?label=Build&logo=github&logoColor=white&style=flat)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen?label=Status)
 
 
-This repository contains the **Config Server** microservice for the **Video Streaming Platform**, deployed in the **Infrastructure** cluster. It acts as a centralised configuration source, providing dynamic configuration to all other microservices in the platform.
+This repository contains the **Config Server** microservice for **Streamix** (Video Streaming Platform), deployed in the **Infrastructure** cluster. It acts as a centralised configuration source, providing dynamic configuration to all other microservices in the platform.
 
-For a complete system overview and links to all microservices, please refer to the [Microservices Hub Repository](https://github.com/mzilin/vsp-microservices-hub).
+For a complete system overview and links to all microservices, please refer to the [Microservices Hub Repository](https://github.com/mzilin/streamix-microservices-hub).
 
 
 ## Table of Contents
@@ -74,12 +74,12 @@ Ensure you have the following installed on your machine:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/mzilin/vsp-infra-config.git
+    git clone https://github.com/mzilin/streamix-infra-config.git
     ```
 
 2. Switch to the `main` branch:
     ```bash
-    cd vsp-infra-config
+    cd streamix-infra-config
     ```
 
 3. Build the project:
