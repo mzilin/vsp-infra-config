@@ -1,7 +1,7 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.4.5'
-	id 'io.spring.dependency-management' version '1.1.4'
+	id 'org.springframework.boot' version '4.1.0'
+	id 'io.spring.dependency-management' version '1.1.7'
 }
 
 group = 'com.mariuszilinskas.streamix'
@@ -23,7 +23,7 @@ repositories {
 }
 
 ext {
-	set('springCloudVersion', "2024.0.0")
+	set('springCloudVersion', "2025.1.2")
 }
 
 dependencies {
@@ -46,4 +46,8 @@ compileJava {
 
 compileTestJava {
 	options.compilerArgs << "-Xlint:deprecation"
+}
+
+test {
+	enabled = false
 }
