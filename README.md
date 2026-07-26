@@ -17,6 +17,7 @@ For a complete system overview and links to all microservices, please refer to t
 * [Setting Up Your Environment](#setting-up-your-environment)
   * [Prerequisites](#prerequisites)
   * [Installation & Running](#installation--running)
+  * [Running with Docker](#running-with-docker)
   * [Environment Variables](#environment-variables)
 * [CI/CD & Deployment](#cicd--deployment)
 * [License](#license)
@@ -93,6 +94,18 @@ Ensure you have the following installed on your machine:
     ```
 
    The service will start on http://localhost:8888 using the embedded Tomcat web server.
+
+
+### Running with Docker
+
+1. Build the Docker image:
+    ```bash
+   docker build -t streamix-infra-config:latest .
+    ```
+2. Run the container:
+    ```bash
+   docker run --rm --name streamix_config -p 8888:8888 streamix-infra-config:latest
+    ```
 
 
 ### Environment Variables
