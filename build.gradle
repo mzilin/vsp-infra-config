@@ -31,6 +31,7 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-config-server'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 dependencyManagement {
@@ -40,6 +41,10 @@ dependencyManagement {
 }
 
 compileJava {
+	options.compilerArgs << "-Xlint:deprecation"
+}
+
+compileTestJava {
 	options.compilerArgs << "-Xlint:deprecation"
 }
 
