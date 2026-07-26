@@ -16,5 +16,5 @@ COPY --from=build /app/build/libs/streamix-infra-config-*.jar app.jar
 RUN chown appuser:appgroup app.jar
 
 USER appuser
-EXPOSE 8080
+EXPOSE 8888
 ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75.0", "-jar", "app.jar"]
