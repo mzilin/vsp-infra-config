@@ -2,14 +2,16 @@ name: Build
 
 on:
   push:
-    branches: [main, prod]
+    branches: [main]
   pull_request:
-    branches: [main, prod]
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: "Compile and Test"
+    timeout-minutes: 15
 
     steps:
       - name: Checkout code
