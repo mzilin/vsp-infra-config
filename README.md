@@ -110,12 +110,14 @@ Ensure you have the following installed on your machine:
 
 ### Environment Variables
 
-This microservice requires the following environment variable to be configured:
+This microservice requires the following environment variables to be configured:
 
-- **GITHUB_USERNAME**: The GitHub username used by the Config Server to authenticate with the remote configuration repository.
-- **GITHUB_PASSWORD**: The personal access token (PAT) used as a password for Git operations, enabling secure access to private configuration repositories.
-- **GITHUB_REPO_URI**: The URI of the Git repository containing the configuration files for this microservice.
-- **EUREKA_CLIENT_DEFAULT_ZONE**: The URL of the Eureka Discovery Service where this microservice should register itself.
+| Variable                     | Description                                                     |
+|------------------------------|-----------------------------------------------------------------|
+| `GITHUB_USERNAME`            | GitHub username to authenticate with the remote repository      |
+| `GITHUB_PASSWORD`            | GitHub password to authenticate with the remote repository      |
+| `GITHUB_REPO_URI`            | The URI of the Git repository with config files                 |
+| `EUREKA_CLIENT_DEFAULT_ZONE` | Eureka Server URL for service registration and discovery        |
 
 
 ## CI/CD & Deployment
